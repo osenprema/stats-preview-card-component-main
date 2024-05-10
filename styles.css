@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('./assets/fonts/LexendDeca-VariableFont_wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter';
+  font-size: 15px;
+}
+
+/* 360 × 640 (small mobile) */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(233, 47%, 7%);
+}
+
+main {
+  width: 80%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-card {
+  position: relative;
+}  
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: hsla(277, 64%, 61%, 0.5);
+  position: absolute;
+  top: 0;
+}  
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.body-card {
+  padding: 3vh 8vw;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.text {
+  margin-top: 2.5vh;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats-values {
+  margin-top: 3vh;
+}
+
+.stats-values div {
+  margin-top: 2.5vh;
+  text-align: center;
+}
+
+.body-card h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 100%);
+}
+
+.body-card p:not(.text) {
+  font-family: 'LexendDeca';
+  margin-top: 1vh;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: hsla(0, 0%, 100%, 0.75);
+} 
+
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  display: none;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}    
+
+/* 375 × 667 (medium mobile) */
+@media screen and (min-width: 375px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* 720 × 1280 (big mobile) */
+@media screen and (min-width: 720px) {
+  main {
+    width: 75%;
+    height: 90%;
+  }
+  
+  h1 {
+    margin-top: 1vh;
+    font-size: 2.7rem;
+  }
+  
+  .text {
+    font-size: 1.6rem;
+  }
+  
+  .body-card h2 {
+    font-size: 2.4rem;
+  }
+  
+  .body-card p:not(.text) {
+    margin-top: 0.4vh;
+    font-size: 1.5rem;
+  } 
+  
+  .attribution {
+    display: block;
+  }
+}
+
+/* 1366 × 768 (medium laptop) */
+@media screen and (min-width: 1366px) {
+  main {
+    height: 45%;
+    flex-direction: row-reverse;
+  }
+  
+  section {
+    width: 50%;
+  }
+
+  img {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .header-card {
+    height: 100%;
+  }  
+  
+  .overlay {
+    border-radius: 0 10px 10px 0;
+  }  
+  
+  h1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+  
+  .body-card {
+    padding: 6% 8% 6% 5%;
+  }
+  
+  .text {
+    margin-top: 8%;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .stats-values {
+    margin-top: 1.5vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stats-values div {
+    text-align: left;
+  }
+  
+  .body-card h2 {
+    font-size: 1.6rem;
+  }
+  
+  .body-card p:not(.text) {
+    font-size: 0.9rem;
+  } 
+}
+
+/* 1440 × 900 (medium desktop) */
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .text {
+    font-size: 1.28rem;
+  }
+  
+  .body-card h2 {
+    font-size: 1.8rem;
+  }
+  
+  .body-card p:not(.text) {
+    font-size: 1rem;
+  } 
+}
+
+/* 1920 × 1080 (big desktop) */
+@media screen and (min-width: 1920px) {
+  main {
+    height: 50%;
+  }
+
+  .body-card {
+    padding: 5% 5% 6% 4%;
+  }
+ 
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .text {
+    margin-top: 3.5vh;
+    font-size: 1.6rem;
+  }
+  
+  .body-card h2 {
+    font-size: 2.3rem;
+  }
+  
+  .body-card p:not(.text) {
+    margin-right: 3vh;
+    font-size: 1.3rem;
+  }
+  
+  .attribution {
+    font-size: 20px;
+  }
+}
